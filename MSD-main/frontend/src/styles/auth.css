@@ -1,0 +1,122 @@
+/* Enhanced Authentication Forms Styling */
+.auth-form {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.auth-form h1 {
+  text-align: center;
+  color: #ff6b35;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.auth-form p {
+  text-align: center;
+  color: #666;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.auth-form a {
+  color: #ff6b35;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.auth-form a:hover {
+  color: #d7263d;
+  text-decoration: underline;
+}
+
+.auth-form form {
+  margin-top: 30px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 12px 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.auth-form input::placeholder {
+  color: #999;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #ff6b35 0%, #d7263d 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.auth-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
+}
+
+.auth-form button:active {
+  transform: translateY(0);
+}
+
+/* Login/Signup Page Background */
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Form Validation Styles */
+.auth-form input:invalid:not(:placeholder-shown) {
+  border-color: #d32f2f;
+}
+
+.auth-form input:valid:not(:placeholder-shown) {
+  border-color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-form {
+    margin: 40px auto;
+    padding: 30px 20px;
+  }
+
+  .auth-form h1 {
+    font-size: 26px;
+  }
+
+  .auth-form input,
+  .auth-form button {
+    font-size: 14px;
+  }
+}
